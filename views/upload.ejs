@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share With</title>
+    <link rel="stylesheet" href="/stylesheets/upload.css"/>
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=91a492f70d74166a97450ed3395caaa8&libraries=services"></script>
+</head>
+
+<body>
+    <ul id="navbar">
+        <li>
+          <a href="/">With</a>
+         
+        </li>
+        <li style="float: right;">
+          <a class="active" href="/upload">Share</a>
+        </li>
+      </ul>
+    <div id="map" style="width:100%;height:100vh; "></div>
+    <div id="menu_wrap" style="text-align: center;">
+        <form onsubmit="searchPlaces(); return false;">
+          <hr><div id="ki">키워드 입력</div>
+            <input type="text" id="keyword"size="15">
+            <div style="text-align: center;">
+            <button type = "submit">검색</button>
+            </div>
+        </form>
+        <hr>
+        <div id="placesList"></div>
+    </div>
+    <script type="text/javascript" src="/javascripts/upload.js"></script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+body {
+  padding: 0px !important;
+  margin: 0px !important;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background: #333; 
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  margin-right: 25px;
+  display: grid;
+  width: 200px;
+  color: white;
+  background: deeppink;
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+  padding: 14px 16px;
+ 
+}
+
+.active{
+  background-color: green;
+  margin-left: 25px;
+}
+
+li a:hover:not(.active){
+  background-color: #111;
+} 
+.marker {
+  width: 15px;
+  height: 15px;
+  background: red;
+  border: 2px solid blue;
+  border-radius: 50%;
+}
+
+.infowindow_wrap{
+  background: white;
+  padding: 20px;
+  border: 1px solid rgba(0,0,0,0.2);
+}
+.infowindow_title{
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+.infowindow_address{
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.infowindow_write {
+  font-size: 13px;
+  font-weight: bolder;
+
+
+}
+.cluster1 {
+  width: 25px;
+  height: 25px;
+  line-height: 26px;
+  font-size: 15px;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  background: blue;
+  border: 2px solid white;
+}
+
+
+.cluster2 {
+  width: 30px;
+  height: 30px;
+  line-height: 31px;
+  font-size: 15px;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  background:blue;
+  border: 2px solid white;
+}
+
+.cluster3 {
+  width: 35px;
+  height: 35px;
+  line-height: 36px;
+  font-size: 15px;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  background:blue;
+  border: 2px solid white;
+}
+.map_wrap, .map_wrap * {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+
+#menu_wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 250px;
+  margin: 50px 0 30px 10px;
+  padding: 5px;
+  overflow-y: auto;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 1;
+  font-size: 12px;
+  border-radius: 10px; 
+}
+
+#menu_wrap hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 2px solid #5f5f5f;
+  margin: 3px 0;
+}
+
+#placesList .item{
+  position: relative;
+  border-bottom: 1px solid #888;
+  overflow: hidden;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+}
+
+#placesList.item span{
+  display: block;
+}
+
+#placesList .item .info {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  
+  padding-bottom: 5px;
+}
+
+#placesList .item .info_title {
+  font-weight: bolder;
+}
+
+input{
+  width: 95%;
+}
+
+button{
+  margin: 3px;
+  width: 97%;
+}
+
+hr{
+  height:5px;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 2px solid #5f5f5f;
+  margin: 3px 0;
+}
