@@ -3,15 +3,31 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "nodemon ./bin/www",
+    "build": "webpack"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "ejs": "~2.6.1",
-    "express": "~4.16.1",
+    "express": "^4.16.4",
     "http-errors": "~1.6.3",
     "mongoose": "^5.12.9",
-    "morgan": "~1.9.1"
-  }
+    "morgan": "~1.9.1",
+    "nodemon": "^2.0.12",
+    "react": "^17.0.2"
+  },
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cch0807/Share-With.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cch0807/Share-With/issues"
+  },
+  "homepage": "https://github.com/cch0807/Share-With#readme",
+  "description": ""
 }
